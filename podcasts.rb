@@ -17,7 +17,7 @@ end
 def download_mp3_file
   ARGV.each do|number|
     @articles.first(number.to_i).each do |title, link| # parser argument for limit dowload articles
-      open("/Users/dungluu/Desktop/#{title}.mp3", 'wb') do |file|
+      open("#{title}.mp3", 'wb') do |file|
         file << URI.open("#{link}").read
       end
     end
