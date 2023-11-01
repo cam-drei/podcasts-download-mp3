@@ -7,11 +7,11 @@
 
 ### Introduce: Download newest mp3 files from https://podcasts.google.com/
 1. get_mp3_from_url:
-_ Get html file
-_ Get the article_titles and the article_links corresponding
+- Get html file
+- Get the article_titles and the article_links corresponding
 2. download_mp3_file:
-_ By default, it will download mp3 files to current folder.
-_ Set specific folder to download:
+- By default, it will download mp3 files to current folder.
+- Set specific folder to download:
   Edit the path to your folder
   ex:
     ```
@@ -19,7 +19,7 @@ _ Set specific folder to download:
       file << URI.open("#{link}").read
     end
     ```
-  ===>
+  To:
     ```
     open("/Users/dungluu/Desktop/#{title}.mp3", 'wb') do |file|
       file << URI.open("#{link}").read
