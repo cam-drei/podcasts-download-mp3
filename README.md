@@ -10,19 +10,5 @@
 - Get html file
 - Get the article_titles and the article_links corresponding
 2. download_mp3_file:
-- By default, it will download mp3 files to current folder.
-- Set specific folder to download:
-  Edit the path to your folder
-  ex:
-    ```
-    open("#{title}.mp3", 'wb') do |file|
-      file << URI.open("#{link}").read
-    end
-    ```
-  To:
-    ```
-    open("/Users/dungluu/Desktop/#{title}.mp3", 'wb') do |file|
-      file << URI.open("#{link}").read
-    end
-    ```
+  By default, it will create directory folder with name "podcasts" to download mp3 files in current file.
 
